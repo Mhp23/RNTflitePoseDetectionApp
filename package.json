@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator=\"iPhone 15 Pro Max\"",
+    "ios:ipad": "react-native run-ios --simulator=\"iPad Pro (12.9-inch) (6th generation)\"",
+    "platforms": "yarn ios && yarn android",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "pod-install": "cd ios && pod install --verbose && cd ..",
+    "phone:android": "adb reverse tcp:8081 tcp:8081 && yarn android --mode=\"Release\""
   },
   "dependencies": {
     "react": "18.2.0",
