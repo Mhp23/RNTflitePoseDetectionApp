@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios --simulator=\"iPhone 15 Pro Max\"",
+    "ios": "react-native run-ios --simulator=\"iPhone 15 Pro Max\" --destination arch=x86_64",
     "ios:ipad": "react-native run-ios --simulator=\"iPad Pro (12.9-inch) (6th generation)\"",
     "platforms": "yarn ios && yarn android",
     "lint": "eslint .",
@@ -12,12 +12,18 @@
     "test": "jest",
     "prepare": "husky install",
     "pre-commit": "lint-staged",
-    "pod-install": "cd ios && pod install --verbose && cd ..",
+    "postinstall": "npx patch-package && yarn pod",
+    "pod": "cd ios && pod install --verbose && cd ..",
     "phone:android": "adb reverse tcp:8081 tcp:8081 && yarn android --mode=\"Release\""
   },
   "dependencies": {
+    "@shopify/react-native-skia": "^0.1.234",
     "react": "18.2.0",
-    "react-native": "0.73.2"
+    "react-native": "0.73.2",
+    "react-native-fast-tflite": "^1.1.2",
+    "react-native-vision-camera": "^3.8.2",
+    "react-native-worklets-core": "^0.2.4",
+    "vision-camera-resize-plugin": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
