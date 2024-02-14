@@ -1,13 +1,12 @@
 diff --git a/node_modules/vision-camera-resize-plugin/ios/FrameBuffer.mm b/node_modules/vision-camera-resize-plugin/ios/FrameBuffer.mm
-index 5fab069..9941e6f 100644
+index 5fab069..3805fc8 100644
 --- a/node_modules/vision-camera-resize-plugin/ios/FrameBuffer.mm
 +++ b/node_modules/vision-camera-resize-plugin/ios/FrameBuffer.mm
-@@ -68,7 +68,7 @@
-     case UINT8:
-       return sizeof(uint8_t);
-     case FLOAT32:
--      return sizeof(float32_t);
-+      return sizeof(float_t);
-   }
- }
+@@ -7,6 +7,7 @@
+ //
  
+ #import "FrameBuffer.h"
++#import <stdint.h>
+ 
+ @implementation FrameBuffer {
+   vImage_Buffer _imageBuffer;
