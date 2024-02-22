@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "WorkoutAI.app"
-               BlueprintName = "WorkoutAI"
-               ReferencedContainer = "container:WorkoutAI.xcodeproj">
+               BuildableName = "RNTflitePoseDetectionApp.app"
+               BlueprintName = "RNTflitePoseDetectionApp"
+               ReferencedContainer = "container:RNTflitePoseDetectionApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "WorkoutAITests.xctest"
-               BlueprintName = "WorkoutAITests"
-               ReferencedContainer = "container:WorkoutAI.xcodeproj">
+               BuildableName = "RNTflitePoseDetectionAppTests.xctest"
+               BlueprintName = "RNTflitePoseDetectionAppTests"
+               ReferencedContainer = "container:RNTflitePoseDetectionApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WorkoutAI.app"
-            BlueprintName = "WorkoutAI"
-            ReferencedContainer = "container:WorkoutAI.xcodeproj">
+            BuildableName = "RNTflitePoseDetectionApp.app"
+            BlueprintName = "RNTflitePoseDetectionApp"
+            ReferencedContainer = "container:RNTflitePoseDetectionApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WorkoutAI.app"
-            BlueprintName = "WorkoutAI"
-            ReferencedContainer = "container:WorkoutAI.xcodeproj">
+            BuildableName = "RNTflitePoseDetectionApp.app"
+            BlueprintName = "RNTflitePoseDetectionApp"
+            ReferencedContainer = "container:RNTflitePoseDetectionApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

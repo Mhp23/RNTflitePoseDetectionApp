@@ -27,7 +27,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'WorkoutAI' do
+target 'RNTflitePoseDetectionApp' do
   config = use_native_modules!
 
   use_react_native!(
@@ -41,7 +41,7 @@ target 'WorkoutAI' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'WorkoutAITests' do
+  target 'RNTflitePoseDetectionAppTests' do
     inherit! :complete
     # Pods for testing
   end
